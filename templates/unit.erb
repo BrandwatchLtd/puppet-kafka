@@ -40,6 +40,9 @@ LimitNOFILE=<%= @limit_nofile %>
 <%- if @limit_core -%>
 LimitCORE=<%= @limit_core %>
 <%- end -%>
+<%- if @pid_file -%>
+PIDFile=<%= @pid_file %>
+<%- end -%>
 
 [Install]
 WantedBy=multi-user.target

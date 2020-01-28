@@ -50,6 +50,7 @@ class kafka::params {
   }
   $limit_nofile = undef
   $limit_core = undef
+  $pid_file = '/just/do/something!'
   $timeout_stop = undef
   $exec_stop = false
   $daemon_start = false

@@ -137,6 +137,7 @@ class kafka::broker (
   Array[String] $service_requires            = $kafka::params::service_requires,
   Optional[String] $limit_nofile             = $kafka::params::limit_nofile,
   Optional[String] $limit_core               = $kafka::params::limit_core,
+  Optional[String] $pid_file                 = $kafka::params::pid_file,
   Optional[String] $timeout_stop             = $kafka::params::timeout_stop,
   Boolean $exec_stop                         = $kafka::params::exec_stop,
   Boolean $daemon_start                      = $kafka::params::daemon_start,
